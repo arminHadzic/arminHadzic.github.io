@@ -1,0 +1,6 @@
+$google-scholar-color: #4788ee;
+
+.ai-google-scholar {
+  padding: 5px;
+  @include social-media-icon($google-scholar-color, $icon-transition-time);
+}

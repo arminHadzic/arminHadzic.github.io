@@ -1,21 +1,13 @@
 # Site configuration Options
 title: Armin Hadzic
-author: 
-  name: Armin Hadzic
-  googlescholar: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
-
+author: Armin Hadzic
 description: Armin Hadzic's personal research website.
 github_username: arminHadzic
 linkedin_username: armin-hadzic
 url: http://www.arminhadzic.com
 
-# Minima theme settings
-minima:
-  date_format: "%b %-d, %Y"
-
-  # Social links
-  social_links:
-    googlescholar: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
+social:
+- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra'}
 
 # Build Settings
 markdown: kramdown
