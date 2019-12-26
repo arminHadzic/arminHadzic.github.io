@@ -10,7 +10,8 @@ Hello, I am Armin Hadzic and this is my personal website. I work in deep learnin
 # Updates
 
 {% for post in site.posts %}
-  <a href="{{ post.url }}"> <h2>{{ post.title }}</h2> <p>{{ post.date | date_to_string }}</p> </a>
+  <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+  <p>{{ post.date | date_to_string }}</p>
 {% endfor %}
 
 <!--
