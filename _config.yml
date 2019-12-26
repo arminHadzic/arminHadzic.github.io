@@ -3,9 +3,16 @@ title: Armin Hadzic
 author: Armin Hadzic
 description: Armin Hadzic's personal research website.
 github_username: arminHadzic
-google_username: armin.hadzic.scholar@gmail.com
 linkedin_username: armin-hadzic
 url: http://www.arminhadzic.com
+
+# Minima theme settings
+minima:
+  date_format: "%b %-d, %Y"
+
+  # Social links
+  social_links:
+    googlescholar: armin.hadzic.scholar@gmail.com
 
 # Build Settings
 markdown: kramdown
