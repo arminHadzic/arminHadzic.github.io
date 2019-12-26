@@ -1,6 +1,7 @@
 ---
 title: Home
-layout: page
+layout: default
+order: 1
 ---
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
