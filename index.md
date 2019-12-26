@@ -10,9 +10,10 @@ Hello, I am Armin Hadzic and this is my personal website. I work in deep learnin
 # Updates
 
 {% for post in site.posts %}
-  <a href="{{ post.url }}">"# {{ post.title }}"</a><p>{{ post.date | date_to_string }}</p>
+  [{{ post.title }}]({{ post.url }}) {{ post.date | date_to_string }}
 {% endfor %}
 
 <!--
+<a href="{{ post.url }}">"# {{ post.title }}"</a> <p>{{ post.date | date_to_string }}</p>
 You can use HTML elements in Markdown, such as the comment element, and they won't be affected by a markdown parser. However, if you create an HTML element in your markdown file, you cannot use markdown syntax within that element's contents.
 -->
