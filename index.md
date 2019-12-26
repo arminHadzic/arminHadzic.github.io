@@ -5,7 +5,7 @@ layout: default
 
 # {{ page.title }}
 
-{% include figure.html file="armin_hadzic_picture.jog" alt="my picture" %}
+{% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
 
 Hello, I am Armin Hadzic and this is my personal website. I work in deep learning and computer vision research.
 
