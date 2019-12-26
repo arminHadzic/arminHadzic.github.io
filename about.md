@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-order: 2
+nav_order: 2
 ---
 
 Welcome to my website, my name is Armin Hadzic and I work on computer vision research. I am currently a graduate student at the University of Kentucky studying Computer Science.

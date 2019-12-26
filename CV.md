@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CV
-order: 4
+nav_order: 4
 ---
 
 {% include pdf_figure.html file="ArminHadzicCV.pdf" alt="myCV" width="100%" height="800em" %}
