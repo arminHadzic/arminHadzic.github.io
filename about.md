@@ -4,7 +4,7 @@ title: About
 nav_order: 2
 ---
 
-Welcome to my website, my name is Armin Hadzic and I work on computer vision research. I am currently a graduate student at the University of Kentucky studying Computer Science.
+Welcome to my website, my name is Armin Hadzic and I work on computer vision research. I am a graduate student at the University of Kentucky studying Computer Science. Currently, I am advised by Dr. Nathan Jacobs and work at the University of Kentucky Computer Vision laboratory.
 
 # Research Interests:
 Developing **deeping learning** methods to address challenges in latent information representation from multiple sources, including pointclouds images, and audio. More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **artificial intelligence**, **remote sensing**, and **robotics**.
