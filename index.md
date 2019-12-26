@@ -9,8 +9,6 @@ Hello, I am Armin Hadzic and this is my personal website. I work in deep learnin
 
 # Updates
 
-{% for post in site.posts %}
-
 {{ site.posts }}
 
 <!--
