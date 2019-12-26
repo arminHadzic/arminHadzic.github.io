@@ -1,8 +1,12 @@
 ---
 title: Home
-layout: default
+layout: page
 order: 1
 ---
+{% assign pages_list = (site.pages | sort: 'order') %}
+{% for node in sorted_pages %}
+  <li><a href="{{node.url}}">{{node.title}}</a></li>
+{% endfor %}
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
 
