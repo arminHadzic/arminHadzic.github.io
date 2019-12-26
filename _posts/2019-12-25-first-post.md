@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post
+title: Initial Post
 ---
 
 Website up and running.
