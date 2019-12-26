@@ -1,6 +1,9 @@
 # Site configuration Options
 title: Armin Hadzic
-author: Armin Hadzic
+author: 
+  name: Armin Hadzic
+  googlescholar: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
+
 description: Armin Hadzic's personal research website.
 github_username: arminHadzic
 linkedin_username: armin-hadzic
@@ -12,7 +15,7 @@ minima:
 
   # Social links
   social_links:
-    googlescholar: armin.hadzic.scholar@gmail.com
+    googlescholar: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
 
 # Build Settings
 markdown: kramdown
