@@ -6,7 +6,7 @@ nav_order: 1
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
 
-Hello, I am Armin Hadzic and this is my personal website. I work on deep learning and computer vision research. Currently, I mostly work on deep learning applied to remote sensing. However, I enjoy working on most applications of deep learning and artificial intelligence.
+Hello, I am Armin Hadzic and this is my personal website. I work on deep learning and computer vision research. Currently, I work on computer vision applied to remote sensing. However, I am interested in most applications of deep learning and artificial intelligence.
 
 # Updates
 
