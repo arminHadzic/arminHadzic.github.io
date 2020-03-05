@@ -6,7 +6,13 @@ nav_order: 1
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
 
-Hello, I am Armin Hadzic and this is my personal website. I work on deep learning and computer vision research. Currently, I work on computer vision applied to remote sensing. However, I am interested in most applications of deep learning and artificial intelligence.
+Welcome to my website, my name is Armin Hadzic and I work on deep learning and computer vision research. Currently, I work on computer vision applied to remote sensing. However, I am interested in most applications of deep learning and artificial intelligence. I am a graduate student at the University of Kentucky studying Computer Science. I work at the University of Kentucky Computer Vision laboratory and am advised by [Dr. Nathan Jacobs](http://cs.uky.edu/~jacobs/).
+
+# Research Interests:
+Developing **deep learning** methods to address challenges in latent information representation from multiple sources, including point clouds images, and audio. More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **artificial intelligence**, **remote sensing**, and **robotics**.
+
+# E-mail:
+armin DOT hadzic AT uky DOT edu
 
 # Updates
 
