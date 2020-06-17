@@ -11,7 +11,7 @@ Weilian Song, Scott Workman, Armin Hadzic, Xu Zhang, Eric Green, Mei Chen, Regin
 
 We propose an automated process to access roadway safety using a deep convolutional neural network. Given a road segment and its street-level panorama, we can estimates a safety rating alongside many other road-level attributes, including curvature, roadside hazards, etc.
 
-## [RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery](http://www.arminhadzic.com/2020/06/16/earthvision-post.html)
+## [RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery](http://www.arminhadzic.com/publications/RasterNet.html)
 Armin Hadzic, Hunter Blanton, Weilian Song, Mei Chen, Scott Workman, and Nathan Jacobs. EARTHVISION 2020
 
 {% include figure.html file="EARTHVISION_RasterNet_teaser.gif" alt="RasterNet_pic" %}
