@@ -3,7 +3,7 @@ title: EARTHVISION 2020 Paper Published
 layout: default
 ---
 
-## [RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery]
+## RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery
 
 Armin Hadzic, Hunter Blanton, Weilian Song, Mei Chen, Scott Workman, and Nathan Jacobs. EARTHVISION 2020
 
