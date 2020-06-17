@@ -34,3 +34,9 @@ You can use HTML elements in Markdown, such as the comment element, and they won
     {% endif %}
   {% endfor %}
 </ul>
+
+{% for p in pages %}
+    {% unless show_in_nav == false %}
+    <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
+    {% endunless %}
+{% endfor %}
