@@ -1,7 +1,7 @@
 ---
 title: RasterNet
 layout: default
-show_in_nav: false
+exclude: true
 ---
 
 ## RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery

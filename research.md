@@ -2,6 +2,7 @@
 title: Research
 layout: default
 nav_order: 5
+exclude: false
 ---
 
 ## [FARSA: Fully Automated Roadway Safety Assessment](https://www.cs.uky.edu/~wso226/2018/01/19/FARSA.html)

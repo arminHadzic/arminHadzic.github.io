@@ -2,7 +2,7 @@
 title: Home
 layout: default
 nav_order: 1
-menu: main
+exclude: false
 ---
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
@@ -20,5 +20,3 @@ armin DOT hadzic AT uky DOT edu
 {% for post in site.posts %}
   [{{ post.title }}]({{ post.url }}) {{ post.date | date_to_string }}
 {% endfor %}
-
-{% include nav_bar_exclude.html %}
