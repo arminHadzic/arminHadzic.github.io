@@ -1,8 +1,9 @@
 ---
 layout: page
+permalink: /publications
 ---
 
-RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery
+## RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery
 
 Armin Hadzic, Hunter Blanton, Weilian Song, Mei Chen, Scott Workman, and Nathan Jacobs. EARTHVISION 2020 [[PDF]](http://openaccess.thecvf.com/content_CVPRW_2020/html/w11/Hadzic_RasterNet_Modeling_Free-Flow_Speed_Using_LiDAR_and_Overhead_Imagery_CVPRW_2020_paper.html)
 
