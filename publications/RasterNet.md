@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 
 ## RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery
