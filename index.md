@@ -27,7 +27,7 @@ armin DOT hadzic AT uky DOT edu
 You can use HTML elements in Markdown, such as the comment element, and they won't be affected by a markdown parser. However, if you create an HTML element in your markdown file, you cannot use markdown syntax within that element's contents.
 -->
 
-
+<!--
 {% for page in site.pages %}
   {% if page.menu == 'main' %}
     <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
@@ -40,3 +40,4 @@ You can use HTML elements in Markdown, such as the comment element, and they won
     <li><a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a></li>
     {% endunless %}
 {% endfor %}
+-->
