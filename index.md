@@ -20,11 +20,3 @@ armin DOT hadzic AT uky DOT edu
 {% for post in site.posts %}
   [{{ post.title }}]({{ post.url }}) {{ post.date | date_to_string }}
 {% endfor %}
-
-{% for page in site.pages %}
-  {% unless page.exclude %}
-    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-      {{ page.title }}
-    </a>
-  {% endunless %}
-{% endfor %}
