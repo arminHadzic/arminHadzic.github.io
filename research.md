@@ -15,7 +15,7 @@ We propose RasterNet, a multi-modal neural network architecture that combines ov
 ## [Estimation Displaced Populations from Overhead](http://www.arminhadzic.com/publications/DCA.html)
 Armin Hadzic, Gordon Christie, Jeffrey Freeman, Amber Dismer, Stevan Bullard, Ashley Greiner, Nathan Jacobs, and Ryan Mukherjee. IGARSS 2020
 
-{% include figure.html file="IGARSS_DCA_teaser.gif" alt="DCA_pic" %}
+{% include figure.html file="IGARSS_DCA_teaser.png" alt="DCA_pic" %}
 
 We developed a method for estimating displaced community populations from high resolution overhead imagery.
 
