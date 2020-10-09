@@ -1,5 +1,4 @@
 ---
-title: EDP
 layout: default
 exclude: true
 ---

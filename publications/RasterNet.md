@@ -1,5 +1,4 @@
 ---
-title: RasterNet
 layout: default
 exclude: true
 ---
