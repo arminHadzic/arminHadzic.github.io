@@ -3,6 +3,7 @@ layout: page
 title: Publications
 nav_order: 3
 exclude: false
+menu: main
 ---
 
 1. Armin Hadzic, Gordon Christie, Jeffrey Freeman, Amber Dismer, Stevan Bullard, Ashley Greiner, Nathan Jacobs, and Ryan Mukherjee. “Estimation Displaced Populations from Overhead”. In: *IEEE International Geoscience and Remote Sensing Symposium (IGARSS).* Waikoloa Village, Hawaii, September 2020. [[PDF]](https://arxiv.org/abs/2006.14547) [[Code]](https://github.com/JHUAPL/EstimatingDisplacedPopulations)
