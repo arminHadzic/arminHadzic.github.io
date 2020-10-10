@@ -1,4 +1,5 @@
 ---
+title: EDP
 layout: default
 exclude: true
 show_in_nav: false
