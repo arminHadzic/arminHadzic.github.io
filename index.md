@@ -6,8 +6,6 @@ exclude: false
 menu: main
 ---
 
-{% include nav.html nav=site.data.menu %}
-
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
 
 Welcome to my website, my name is Armin Hadzic and I work on deep learning and computer vision research. Currently, I work on computer vision applied to remote sensing. However, I am interested in most applications of deep learning and artificial intelligence. I am an Associate Researcher at the Johns Hopkins Applied Physics Laboratory in the [Intelligent Systems Center](https://www.jhuapl.edu/isc). Formerly, I worked at the University of Kentucky Computer Vision laboratory and was advised by [Dr. Nathan Jacobs](http://cs.uky.edu/~jacobs/).
