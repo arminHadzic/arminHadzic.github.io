@@ -1,7 +1,6 @@
 ---
 layout: default
 exclude: true
-published: false
 ---
 
 ## Estimation Displaced Populations from Overhead
