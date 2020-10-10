@@ -3,7 +3,6 @@ title: Home
 layout: default
 nav_order: 1
 exclude: false
-menu: main
 ---
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}

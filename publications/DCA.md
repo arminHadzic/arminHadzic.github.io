@@ -1,6 +1,7 @@
 ---
 layout: default
 exclude: true
+show_in_nav: false
 ---
 
 ## Estimation Displaced Populations from Overhead

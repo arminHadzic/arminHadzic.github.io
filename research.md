@@ -3,7 +3,6 @@ title: Research
 layout: default
 nav_order: 5
 exclude: false
-menu: main
 ---
 
 ## [RasterNet: Modeling Free-Flow Speed using LiDAR and Overhead Imagery](http://www.arminhadzic.com/publications/RasterNet.html)
