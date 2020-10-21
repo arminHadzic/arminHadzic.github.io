@@ -13,7 +13,7 @@ Welcome to my website, my name is Armin Hadzic and I work on deep learning and c
 Developing **deep learning** methods to address challenges in latent information representation from multiple sources, including point clouds images, and audio. More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **artificial intelligence**, **remote sensing**, and **robotics**.
 
 # E-mail:
-armin DOT hadzic AT uky DOT edu
+arminhadzic AT outlook DOT com
 
 # Updates
 
