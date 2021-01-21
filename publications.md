@@ -5,7 +5,7 @@ nav_order: 3
 exclude: false
 ---
 
-1. AMei Chen, Armin Hadzic, Welian Song, and Nathan Jacobs. “Applications of Deep Machine Learning to Highway Safety and Usage Assessment”. In: *Transportation Research Board Workshop (Sponsored by AED50).* January 2021. Oral.
+1. Mei Chen, Armin Hadzic, Welian Song, and Nathan Jacobs. “Applications of Deep Machine Learning to Highway Safety and Usage Assessment”. In: *Transportation Research Board Workshop (Sponsored by AED50).* January 2021. Oral.
 
 2. Armin Hadzic, Gordon Christie, Jeffrey Freeman, Amber Dismer, Stevan Bullard, Ashley Greiner, Nathan Jacobs, and Ryan Mukherjee. “Estimation Displaced Populations from Overhead”. In: *IEEE International Geoscience and Remote Sensing Symposium (IGARSS).* Waikoloa Village, Hawaii, September 2020. [[PDF]](https://arxiv.org/abs/2006.14547) [[Code]](https://github.com/JHUAPL/EstimatingDisplacedPopulations)
 
