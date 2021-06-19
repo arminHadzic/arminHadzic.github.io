@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EARTHVISION 2021 Paper Published
+title: EARTHVISION 2021 Best Paper Award
 ---
 
 [Towards Indirect Top-Down Road Transport Emissions Estimation](https://openaccess.thecvf.com/content/CVPR2021W/EarthVision/html/Mukherjee_Towards_Indirect_Top-Down_Road_Transport_Emissions_Estimation_CVPRW_2021_paper.html) [[PDF]](https://arxiv.org/abs/2103.08829)
