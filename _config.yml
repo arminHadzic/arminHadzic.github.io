@@ -10,5 +10,5 @@ social:
 - {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra'}
 
 # Build Settings
-markdown: kramdown
+#markdown: kramdown
 theme: minima
