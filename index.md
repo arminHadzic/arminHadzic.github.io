@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+menu: main
 nav_order: 1
 exclude: false
 ---

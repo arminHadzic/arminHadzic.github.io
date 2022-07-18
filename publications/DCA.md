@@ -1,5 +1,6 @@
 ---
-title: EDP
+title: Pop
+menu: main
 layout: default
 exclude: true
 show_in_nav: false
