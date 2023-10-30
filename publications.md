@@ -14,7 +14,7 @@ Assisted Intervention (MICCAI).* October 2023, pp. 374–384. [[PDF]](https://ar
 
 2. Scott Workman, **Armin Hadzic**, and M. Usman Rafique. “Handling Image and Label Resolution Mismatch in Remote
 Sensing”. In: *IEEE Winter Conference on Applications of Computer Vision (WACV).* January 2023. [[PDF]](https://arxiv.org/abs/2211.15790)
-go
+
 3. **Armin Hadzic**, Grace M Hwang, Kechen Zhang, Kevin M Schultz, and Joseph D Monaco. “Bayesian optimization of distributed neurodynamical controller models for spatial navigation.” In: *Array* 2022, pp.100218. [[PDF]](https://www.sciencedirect.com/science/article/pii/S2590005622000601?via%3Dihub)
 
 4. Elise Buckley, Joseph D Monaco, Kevin M Schultz, Robert Chalmers, **Armin Hadzic**, Kechen Zhang, Grace M Hwang, and M Dwight Carr. "An interdisciplinary approach to high school curriculum development: Swarming Powered by Neuroscience". In: Proceedings 2022 IEEE Integrated STEM Education Conference (ISEC). March 2022. **Best Paper Award** [[PDF]](https://arxiv.org/abs/2109.05545)
