@@ -8,10 +8,10 @@ exclude: false
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}
 
-Welcome to my website. My name is Armin Hadzic and I am a research scientist. Currently, I work on computer vision and deep learning research applied to remote sensing. However, I am interested in most applications of deep learning and artificial intelligence. I received a MS in Computer Science while working at the [Multimodal Vision Research Laboratory](http://mvrl.cs.uky.edu/) at University of Kentucky, where I was advised by [Dr. Nathan Jacobs](http://cs.uky.edu/~jacobs/).
+Welcome to my website. My name is Armin Hadzic and I am a research scientist. Currently I work on computer vision and deep learning AI research. However, I am interested in most applications of deep learning and artificial intelligence. I received a MS in Computer Science while working at the [Multimodal Vision Research Laboratory](http://mvrl.cs.uky.edu/) at University of Kentucky, where I was advised by [Dr. Nathan Jacobs](http://cs.uky.edu/~jacobs/).
 
 # Research Interests:
-Developing **deep learning** methods to address challenges in latent information representation from multiple sources, including point clouds, images, and audio. More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **artificial intelligence**, **remote sensing**, and **robotics**.
+Developing unsupervised learning methods to address challenges in open vocabulary segmentation and latent information representation, especially across multiple modalities (e.g., imagery, text, and point clouds). More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **NLP**, **robotics**, and **artificial intelligence**.
 
 # Contact:
 arminhadzic AT outlook DOT com
