@@ -1,20 +1,14 @@
-<!--  <figure>
-  <iframe src="{{ include.file | prepend: '/images/' | absolute_url }}" alt="{{ include.alt }}" {% if include.width && include.height %}width="{{ include.width }}" height
-  ="{{ include.height}}"{% endif %}></iframe>
-  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
-</figure> -->
-
 <!-- Include PDF.js from a CDN -->
-<div id="pdf-viewer" style="width: {{ include.width }}; height: {{ include.height }};"></div>
+<div id="pdf-viewer-{{ include.file }}" style="width: {{ include.width }}; height: {{ include.height }};"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
 
 <script>
-  function loadPDF(pdfUrl) {
+  function loadPDF(pdfUrl, viewerId) {
     const loadingTask = pdfjsLib.getDocument(pdfUrl);
     loadingTask.promise.then(function(pdf) {
-      const container = document.getElementById('pdf-viewer');
+      const container = document.getElementById(viewerId);
       
       for (let i = 1; i <= pdf.numPages; i++) {
         pdf.getPage(i).then(function(page) {
@@ -34,9 +28,10 @@
     });
   }
 
-  // Get the PDF URL from the "file" parameter
+  // Get the PDF URL from the "file" parameter and set a unique viewer ID
   const pdfUrl = "/assets/pdf/{{ include.file }}";
+  const viewerId = "pdf-viewer-{{ include.file }}";
 
   // Load the PDF
-  loadPDF(pdfUrl);
+  loadPDF(pdfUrl, viewerId);
 </script>
