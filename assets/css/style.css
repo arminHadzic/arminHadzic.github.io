@@ -1,0 +1,19 @@
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 24px; /* Adjust the size as needed */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* Optional: Change color on hover */
+}
