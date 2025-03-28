@@ -5,34 +5,38 @@
 </figure> -->
 
 <!-- Include PDF.js from a CDN -->
+<div id="pdf-viewer" style="width: {{ include.width }}; height: {{ include.height }};"></div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css"></link>
 
-<div id="pdf-viewer"></div>
 <script>
-  // Specify the path to your PDF
-  const url = "{{ include.file | prepend: '/images/pdf/' | absolute_url }}";
+  function loadPDF(pdfUrl) {
+    const loadingTask = pdfjsLib.getDocument(pdfUrl);
+    loadingTask.promise.then(function(pdf) {
+      const container = document.getElementById('pdf-viewer');
+      
+      for (let i = 1; i <= pdf.numPages; i++) {
+        pdf.getPage(i).then(function(page) {
+          const canvas = document.createElement('canvas');
+          const context = canvas.getContext('2d');
+          const viewport = page.getViewport({ scale: 1 });
+          canvas.width = viewport.width;
+          canvas.height = viewport.height;
+          container.appendChild(canvas);
 
-  // Initialize the PDF.js viewer
-  const loadingTask = pdfjsLib.getDocument(url);
-  loadingTask.promise.then(function(pdf) {
-    const container = document.getElementById('pdf-viewer');
-    
-    // Loop through each page of the PDF and render it
-    for (let i = 1; i <= pdf.numPages; i++) {
-      pdf.getPage(i).then(function(page) {
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-        const viewport = page.getViewport({ scale: 1 });
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-        container.appendChild(canvas);
-
-        page.render({
-          canvasContext: context,
-          viewport: viewport
+          page.render({
+            canvasContext: context,
+            viewport: viewport
+          });
         });
-      });
-    }
-  });
+      }
+    });
+  }
+
+  // Get the PDF URL from the "file" parameter
+  const pdfUrl = "/assets/pdf/{{ include.file }}";
+
+  // Load the PDF
+  loadPDF(pdfUrl);
 </script>

@@ -7,7 +7,7 @@ menu: main
 ---
 
 # Resume
-{% include pdf_figure.html file="ArminHadzicResume.pdf" alt="myCV" width="100%" height="800em" %}
+{% include pdf_figure.html file="ArminHadzicResume.pdf" alt="myResume" width="100%" height="800em" %}
 
 # CV
 {% include pdf_figure.html file="ArminHadzicCV.pdf" alt="myCV" width="100%" height="800em" %}
