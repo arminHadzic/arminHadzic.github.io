@@ -1,8 +1,9 @@
 <!-- Include PDF.js from a CDN -->
-<div id="pdf-viewer-{{ include.file }}" style="width: {{ include.width }}; height: {{ include.height }};"></div>
+<div id="pdf-viewer-{{ include.file }}" style="width: {{ include.width }}; height: {{ include.height }}; overflow: auto; border: 1px solid #ccc;"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
+
 
 <script>
   function loadPDF(pdfUrl, viewerId) {
