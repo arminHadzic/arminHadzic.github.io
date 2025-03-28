@@ -7,7 +7,8 @@ linkedin_username: armin-hadzic
 url: http://www.arminhadzic.com
 
 social:
-- {icon: 'google-scholar', link: 'https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra'}
+  google_scholar: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
+  youtube: "www.youtube.com/@arminhadzic2278"
 
 # Build Settings
 #markdown: kramdown
