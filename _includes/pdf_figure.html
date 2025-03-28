@@ -5,39 +5,42 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
 
 <script>
-  function loadPDF(pdfUrl, viewerId) {
-    const loadingTask = pdfjsLib.getDocument(pdfUrl);
-    loadingTask.promise.then(function(pdf) {
-      const container = document.getElementById(viewerId);
-      
-      // Clear the previous content in the container
-      container.innerHTML = ''; // This clears any existing PDF content
+  // Create a unique function name and variable names using the file name
+  (function() {
+    const uniqueId = "{{ include.file }}";
+    const pdfUrl = "/assets/pdf/" + uniqueId;
+    const viewerId = "pdf-viewer-" + uniqueId;
 
-      for (let i = 1; i <= pdf.numPages; i++) {
-        pdf.getPage(i).then(function(page) {
-          const canvas = document.createElement('canvas');
-          const context = canvas.getContext('2d');
-          const viewport = page.getViewport({ scale: 1 });
-          canvas.width = viewport.width;
-          canvas.height = viewport.height;
-          container.appendChild(canvas);
+    function loadPDF(pdfUrl, viewerId) {
+      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+      loadingTask.promise.then(function(pdf) {
+        const container = document.getElementById(viewerId);
+        
+        // Clear the previous content in the container
+        container.innerHTML = ''; // This clears any existing PDF content
 
-          page.render({
-            canvasContext: context,
-            viewport: viewport
+        for (let i = 1; i <= pdf.numPages; i++) {
+          pdf.getPage(i).then(function(page) {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            const viewport = page.getViewport({ scale: 1 });
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            container.appendChild(canvas);
+
+            page.render({
+              canvasContext: context,
+              viewport: viewport
+            });
           });
-        });
-      }
-    }).catch(function(error) {
-      console.error("Error loading PDF:", error);
-    });
-  }
+        }
+      }).catch(function(error) {
+        console.error("Error loading PDF:", error);
+      });
+    }
 
-  // Use let instead of const to avoid redeclaration issues
-  let pdfUrl = "/assets/pdf/{{ include.file }}";
-  let viewerId = "pdf-viewer-{{ include.file }}";
-
-  // Load the PDF
-  loadPDF(pdfUrl, viewerId);
+    // Load the PDF
+    loadPDF(pdfUrl, viewerId);
+  })();
 </script>
 
