@@ -1,9 +1,8 @@
 <!-- Include PDF.js from a CDN -->
-<div id="pdf-viewer-{{ include.file }}" style="width: {{ include.width }}; height: {{ include.height }}; overflow: auto; border: 1px solid #ccc;"></div>
+<div id="pdf-viewer-{{ include.file }}" style="width: {{ include.width }}; height: {{ include.height }}; overflow: auto;"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
-
 
 <script>
   function loadPDF(pdfUrl, viewerId) {
@@ -11,6 +10,9 @@
     loadingTask.promise.then(function(pdf) {
       const container = document.getElementById(viewerId);
       
+      // Clear the previous content in the container
+      container.innerHTML = ''; // This clears any existing PDF content
+
       for (let i = 1; i <= pdf.numPages; i++) {
         pdf.getPage(i).then(function(page) {
           const canvas = document.createElement('canvas');
@@ -26,6 +28,8 @@
           });
         });
       }
+    }).catch(function(error) {
+      console.error("Error loading PDF:", error);
     });
   }
 

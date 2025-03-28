@@ -7,10 +7,11 @@ menu: main
 ---
 
 # Resume
-{% include pdf_figure.html file="ArminHadzicResume.pdf" alt="myResume" width="100%" height="auto" %}
+{% include pdf_figure.html file="ArminHadzicResume.pdf" alt="myResume" width="auto" height="auto" %}
 
 # CV
-{% include pdf_figure.html file="ArminHadzicCV.pdf" alt="myCV" width="100%" height="auto" %}
+{% include pdf_figure.html file="ArminHadzicCV.pdf" alt="myCV" width="auto" height="auto" %}
 
 # Download: 
-[Latest CV](https://github.com/arminHadzic/Curriculum-Vitae-Latex/blob/master/ArminHadzicCV.pdf)
+[Resume](https://raw.githubusercontent.com/arminHadzic/arminHadzic.github.io/master/assets/pdf/ArminHadzicResume.pdf)
+[CV](https://raw.githubusercontent.com/arminHadzic/arminHadzic.github.io/master/assets/pdf/ArminHadzicCV.pdf)
