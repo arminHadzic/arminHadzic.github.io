@@ -33,10 +33,11 @@
     });
   }
 
-  // Get the PDF URL from the "file" parameter and set a unique viewer ID
-  const pdfUrl = "/assets/pdf/{{ include.file }}";
-  const viewerId = "pdf-viewer-{{ include.file }}";
+  // Use let instead of const to avoid redeclaration issues
+  let pdfUrl = "/assets/pdf/{{ include.file }}";
+  let viewerId = "pdf-viewer-{{ include.file }}";
 
   // Load the PDF
   loadPDF(pdfUrl, viewerId);
 </script>
+
