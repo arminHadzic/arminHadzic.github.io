@@ -3,3 +3,36 @@
   ="{{ include.height}}"{% endif %}></iframe>
   {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
 </figure> -->
+
+<!-- Include PDF.js from a CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf_viewer.min.css">
+
+<div id="pdf-viewer"></div>
+<script>
+  // Specify the path to your PDF
+  const url = '/images/pdf/ArminHadzicCV.pdf';
+
+  // Initialize the PDF.js viewer
+  const loadingTask = pdfjsLib.getDocument(url);
+  loadingTask.promise.then(function(pdf) {
+    const container = document.getElementById('pdf-viewer');
+    
+    // Loop through each page of the PDF and render it
+    for (let i = 1; i <= pdf.numPages; i++) {
+      pdf.getPage(i).then(function(page) {
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        const viewport = page.getViewport({ scale: 1 });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        container.appendChild(canvas);
+
+        page.render({
+          canvasContext: context,
+          viewport: viewport
+        });
+      });
+    }
+  });
+</script>
