@@ -11,7 +11,7 @@
 <div id="pdf-viewer"></div>
 <script>
   // Specify the path to your PDF
-  const url = '/images/pdf/ArminHadzicCV.pdf';
+  const url = "{{ include.file | prepend: '/images/pdf/' | absolute_url }}";
 
   // Initialize the PDF.js viewer
   const loadingTask = pdfjsLib.getDocument(url);
