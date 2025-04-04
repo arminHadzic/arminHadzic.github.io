@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CV
-permalink: /resume/
+permalink: /cv.html
 ---
 
 # Resume

@@ -13,7 +13,7 @@ Welcome to my website. My name is Armin Hadzic and I am a research scientist. Cu
 # Research Interests:
 Developing unsupervised learning methods to address challenges in open vocabulary segmentation and latent information representation, especially across multiple modalities (e.g., imagery, text, and point clouds). More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **NLP**, **robotics**, and **artificial intelligence**.
 
-[Resume \& CV](http://www.arminhadzic.com/CV.html)
+Check out my [Resume and CV](http://www.arminhadzic.com/CV.html)
 
 # Contact:
 arminhadzic AT outlook DOT com
