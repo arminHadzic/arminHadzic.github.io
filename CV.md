@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: page
 title: CV
-nav_order: 4
-exclude: false
-menu: main
+permalink: /resume/
 ---
 
 # Resume

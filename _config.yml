@@ -10,6 +10,15 @@ social:
   google_scholar: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
   youtube: "www.youtube.com/@arminhadzic2278"
 
+
+header_pages:
+  - index.md
+  - research.md
+  - publications.md
+  # - CV.md
+  # - publications/DCA.md
+  # - publications/RasterNet.md
+
 # Build Settings
 #markdown: kramdown
 theme: minima
