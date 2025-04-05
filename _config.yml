@@ -1,13 +1,19 @@
 # Site configuration Options
 title: Personal research website.
 author: Armin Hadzic
-description: &copy 2025 Armin Hadzic. All rights reserved.
-github_username: arminHadzic
-linkedin_username: armin-hadzic
+description: &copy; 2025 Armin Hadzic. All rights reserved.
+#github_username: arminHadzic
+#linkedin_username: armin-hadzic
 url: http://www.arminhadzic.com
 
 minima:
   social_links:
+    - title: "GitHub"
+      url: "https://github.com/arminHadzic"
+      icon: "github"
+    - title: "Linkedin"
+      url: "https://www.linkedin.com/in/armin-hadzic/"
+      icon: "linkedin"
     - title: "YouTube"
       url: "https://www.youtube.com/@arminhadzic2278"
       icon: "youtube"
