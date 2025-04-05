@@ -17,3 +17,8 @@
 .social-icons a:hover {
   color: #0077b5; /* Optional: Change color on hover */
 }
+
+.social-media-list a:hover {
+  color: #0073e6; /* blue highlight on hover */
+  text-decoration: underline;
+}
