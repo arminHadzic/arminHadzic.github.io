@@ -3,11 +3,11 @@
     <li>
       <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
         {%- if entry.icon == "google-scholar" -%}
-          <img src="/assets/icons/googlescholar.svg" alt="Google Scholar" />
+          <img src="/assets/icons/googlescholar.svg" alt="Google Scholar" class="social-icon" />
         {%- else -%}
-          <span class="fa-brands fa-{{ entry.icon }} fa-lg"></span>
+          <span class="fa-brands fa-{{ entry.icon }} fa-lg social-icon"></span>
         {%- endif -%}
-        <span>{{ entry.title }}</span>
+        <span class="social-label">{{ entry.title }}</span>
       </a>
     </li>
   {%- endfor -%}
