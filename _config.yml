@@ -1,7 +1,7 @@
 # Site configuration Options
-title: Personal research website.
-author: Armin Hadzic
-description: &copy; 2025 Armin Hadzic. All rights reserved.
+title: Armin Hadzic
+#author: Armin Hadzic
+description: © 2025 Armin Hadzic. All rights reserved.
 #github_username: arminHadzic
 #linkedin_username: armin-hadzic
 url: http://www.arminhadzic.com
@@ -17,9 +17,9 @@ minima:
     - title: "YouTube"
       url: "https://www.youtube.com/@arminhadzic2278"
       icon: "youtube"
-    - title: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
-      icon: "google-scholar"
+    # - title: "Google Scholar"
+    #   url: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
+    #   icon: "google-scholar"
 
 
 header_pages:
