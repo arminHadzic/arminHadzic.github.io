@@ -19,27 +19,29 @@
 }
 
 .social-media-list {
-  display: flex;
-  gap: 1.5em;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
+  max-width: 600px; /* Adjust width as needed */
   justify-content: center;
-  align-items: center;
 }
 
 .social-media-list li {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .social-media-list a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: inherit;
-  gap: 0.5em;
 }
 
 .social-media-list a:hover {
@@ -47,7 +49,9 @@
 }
 
 .social-icon {
-  height: 1em;
+  font-size: 1.5em;
+  height: 1.5em;
+  margin-bottom: 0.3em;
 }
 
 .social-label {
