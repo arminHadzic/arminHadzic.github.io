@@ -18,7 +18,35 @@
   color: #0077b5; /* Optional: Change color on hover */
 }
 
+.social-media-list {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-list li {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
 .social-media-list a:hover {
-  color: #0073e6; /* blue highlight on hover */
+  color: #0073e6;
   text-decoration: underline;
+}
+
+.social-media-list img,
+.social-media-list .fa-brands {
+  margin-right: 0.5em;
+  height: 1em;
 }
