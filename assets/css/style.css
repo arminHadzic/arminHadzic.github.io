@@ -1,64 +1,86 @@
-.social-media-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
-  gap: 1.5rem !important;
-  list-style: none;
-  padding: 0 !important;
-  margin: 0 auto !important;
-  max-width: 600px;
-  justify-items: center !important;
-  border: 2px dashed red;
-}
-
-.social-media-grid li {
-  width: 100%; /* This ensures the items align properly inside grid columns */
-}
-
-.social-media-grid a {
-  display: inline-flex; /* NOT full width */
-  flex-direction: column;
+/* General footer layout */
+.footer-col-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  max-width: 100px; /* prevent full width! */
+  padding: 1rem;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.footer-col.footer-col-2 {
+/* Footer columns */
+.footer-col {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.5rem;
+}
+
+/* Author name (left), copyright (right) */
+.footer-col-1, .footer-col-3 {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Social icon grid (center) */
+.footer-col-2 {
   display: flex;
   justify-content: center;
 }
 
+/* Grid layout for social icons */
+.social-media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Individual icon + label */
+.social-media-grid li {
+  text-align: center;
+}
+
+.social-media-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #004080;
+  transition: color 0.3s ease;
+}
+
+.social-media-grid a:hover {
+  color: #0073e6;
+}
+
+/* Font Awesome icons */
 .social-icon {
-  width: 2.2rem;
-  height: 2.2rem;
-  aspect-ratio: 1 / 1;
+  font-size: 2rem;
   display: block;
   margin-bottom: 0.4em;
-  object-fit: contain;
 }
 
-img.social-icon {
-  width: 2.2rem;
+/* Google Scholar image sizing */
+.social-icon[src$=".svg"],
+.social-icon[src$=".png"],
+.social-icon[src$=".jpg"] {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
   aspect-ratio: 1 / 1;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 0.4em auto;
 }
 
-.footer-col-2 {
-  flex: 1 1 100%;
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0;
+/* Label text */
+.social-label {
+  font-size: 0.85rem;
 }
 
-.footer-col-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
+/* Debug border (optional) */
+/* .social-media-grid {
+  border: 2px dashed red;
+} */
