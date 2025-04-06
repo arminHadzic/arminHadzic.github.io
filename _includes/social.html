@@ -5,7 +5,7 @@
         {%- if entry.type == "svg" -%}
           <img src="{{ entry.icon | relative_url }}" alt="{{ entry.title }}" class="social-icon custom-svg-icon" />
         {%- else -%}
-          <span class="fa-brands fa-{{ entry.icon }} social-icon"></span>
+          <i class="fa-brands fa-{{ entry.icon }} social-icon"></i>
         {%- endif -%}
         <span class="social-label">{{ entry.title }}</span>
       </a>

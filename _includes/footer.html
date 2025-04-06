@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="footer-left">
+    {{ site.author.name }}
+  </div>
+
+  <div class="footer-center">
+    {% include social.html %}
+  </div>
+
+  <div class="footer-right">
+    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
+  </div>
+</footer>
