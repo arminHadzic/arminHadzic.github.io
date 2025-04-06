@@ -96,15 +96,66 @@ nav a,
   transition: color 0.3s ease;
 }
 
-/* === Header and Nav Bar in Dark Mode === */
+/* === Header & Nav Bar === */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a,
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0.75rem;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-right: auto;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === Dark Mode Styling === */
+:root {
+  --background-dark: #1f2937; /* Tailwind gray-800 */
+  --text-dark: #f9fafb;       /* Tailwind gray-100 */
+  --accent-dark: #60a5fa;     /* Tailwind blue-400 */
+  --light-bg: #ffffff;
+  --light-text: #000000;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
 html.dark .site-header,
 html.dark .site-nav {
   background-color: var(--background-dark);
+  border-bottom: 1px solid #374151;
   color: var(--text-dark);
-  border-bottom: 1px solid #374151; /* Tailwind gray-700 */
 }
 
-/* Title and nav links in dark mode */
 html.dark .site-title,
 html.dark .site-nav a {
   color: var(--text-dark);
@@ -114,37 +165,13 @@ html.dark .site-nav a:hover {
   color: var(--accent-dark);
 }
 
-/* === Dark Mode Toggle - Tailwind-inspired === */
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-/* Flex layout for nav: links on left, toggle on right */
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.nav-links {
-  display: flex;
-  flex: 1;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-/* Optional: align toggle vertically with nav items */
+/* === Dark Mode Toggle === */
 .dark-toggle {
   position: relative;
   width: 44px;
   height: 24px;
+  flex-shrink: 0;
 }
-
 
 .dark-toggle input {
   opacity: 0;
@@ -159,7 +186,7 @@ html.dark .site-nav a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #d1d5db; /* Tailwind gray-300 */
+  background-color: #d1d5db;
   transition: background-color 0.3s ease;
   border-radius: 9999px;
 }
@@ -174,18 +201,18 @@ html.dark .site-nav a:hover {
   background-color: white;
   transition: transform 0.3s ease;
   border-radius: 50%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .dark-toggle input:checked + .slider {
-  background-color: #4b5563; /* Tailwind gray-600 */
+  background-color: #4b5563;
 }
 
 .dark-toggle input:checked + .slider::before {
   transform: translateX(20px);
 }
 
-
+/* === Responsive Nav Stack === */
 @media (max-width: 768px) {
   .site-nav {
     flex-direction: column;
