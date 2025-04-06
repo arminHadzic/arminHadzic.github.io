@@ -9,15 +9,19 @@ minima:
     - title: "GitHub"
       url: "https://github.com/arminHadzic"
       icon: "github"
+      type: "fa"
     - title: "Linkedin"
       url: "https://www.linkedin.com/in/armin-hadzic/"
       icon: "linkedin"
+      type: "fa"
     - title: "YouTube"
       url: "https://www.youtube.com/@arminhadzic2278"
       icon: "youtube"
+      type: "fa"
     - title: "Google Scholar"
       url: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
-      icon: "google-scholar"
+      icon: "/assets/icons/googlescholar.svg"
+      type: "svg"
 
 
 header_pages:

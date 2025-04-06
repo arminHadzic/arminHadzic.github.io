@@ -1,78 +1,38 @@
-/* Footer container */
-.footer-col-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-/* Footer text sections */
-.footer-col {
-  flex: 1;
-  min-width: 150px;
-  font-size: 0.85rem;
-  color: #666;
-  padding: 0.5rem;
-}
-
-/* Center section (social icons) */
-.footer-col-2 {
-  display: flex;
-  justify-content: center;
-}
-
-/* Horizontal layout for icons */
 .social-media-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  justify-items: start;
+  align-items: center;
+  max-width: 100%;
+  margin: 1rem auto;
   list-style: none;
   padding: 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
 }
 
-/* Each icon+label pair */
 .social-media-grid li {
-  text-align: center;
+  text-align: left;
+}
+
+.social-media-grid a {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-/* Anchor styling */
-.social-media-grid a {
   text-decoration: none;
-  color: #004080;
-  transition: color 0.3s ease;
+  color: inherit;
 }
 
-.social-media-grid a:hover {
-  color: #0073e6;
-}
-
-/* Font Awesome icons */
 .social-icon {
-  font-size: 2rem;
-  display: block;
-  margin-bottom: 0.4em;
-}
-
-/* Scholar image icon sizing */
-.social-icon[src$=".svg"],
-.social-icon[src$=".png"],
-.social-icon[src$=".jpg"] {
   width: 2rem;
   height: 2rem;
-  object-fit: contain;
-  aspect-ratio: 1 / 1;
+  margin-bottom: 0.3rem;
 }
 
-/* Label text */
+.custom-svg-icon {
+  object-fit: contain;
+}
+
 .social-label {
   font-size: 0.85rem;
+  text-align: center;
 }
