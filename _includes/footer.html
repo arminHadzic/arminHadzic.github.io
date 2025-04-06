@@ -12,24 +12,21 @@
   </div>
 
   <script>
-    const toggle = document.getElementById("dark-mode-toggle");
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const currentMode = localStorage.getItem("theme");
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("darkModeToggle");
+      const isDark = localStorage.getItem("theme") === "dark";
 
-    if (currentMode === "dark" || (!currentMode && prefersDark)) {
-      document.body.classList.add("dark-mode");
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener("change", () => {
-      if (toggle.checked) {
-        document.body.classList.add("dark-mode");
-        localStorage.setItem("theme", "dark");
-      } else {
-        document.body.classList.remove("dark-mode");
-        localStorage.setItem("theme", "light");
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+        toggle.checked = true;
       }
+
+      toggle.addEventListener("change", function () {
+        document.documentElement.classList.toggle("dark");
+        localStorage.setItem("theme", toggle.checked ? "dark" : "light");
+      });
     });
   </script>
+
 
 </footer>

@@ -213,3 +213,27 @@ input[type="checkbox"]:checked + .toggle-slider {
 input[type="checkbox"]:checked + .toggle-slider::before {
   transform: translateX(24px);
 }
+
+
+:root {
+  --light-bg: #ffffff;
+  --light-text: #1a202c; /* Tailwind's gray-900 */
+  --dark-bg: #1f2937;    /* Tailwind's gray-800 */
+  --dark-text: #f9fafb;  /* Tailwind's gray-50 */
+}
+
+html.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
