@@ -30,4 +30,4 @@ header_pages:
 
 # Build Settings
 #markdown: kramdown
-theme: minima
+#theme: minima
