@@ -48,23 +48,6 @@
   transition: color 0.3s;
 }
 
-.social-icon:hover {
-  transform: scale(1.1);
-}
-
-/* For SVG icons */
-.custom-svg-icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-bottom: 0.4rem;
-}
-
-/* === Labels === */
-.social-label {
-  font-size: 0.8rem;
-  margin-top: 0.2rem;
-}
-
 .social-icon {
   font-size: 2rem;
   color: var(--text-color, #444);
@@ -76,154 +59,23 @@
 .social-media-grid a:hover .social-icon {
   color: var(--brand-color, #0056b3);
   filter: brightness(1.2);
+  transform: scale(1.1);
 }
 
-/* Default light theme */
-body {
-  background-color: #fff;
-  color: #000;
+.social-label {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
 }
 
-/* Button styles */
-#dark-mode-toggle {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background: none;
-  border: 2px solid #ccc;
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  font-size: 1.2rem;
-  z-index: 1000;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-body.dark-mode #dark-mode-toggle {
-  background-color: #1e1e1e;
-  color: #eee;
-  border-color: #666;
-}
-
-
-/* Navigation bar links */
-nav a {
-  color: inherit;
-  text-decoration: none;
-  padding: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-/* Light mode (default) */
-body:not(.dark-mode) nav a {
-  color: #000;
-}
-
-/* Dark mode override */
-body.dark-mode nav a {
-  color: #f0f0f0;
-}
-
-body.dark-mode nav a:hover {
-  color: #aad3ff;
-}
-
-
-/* Light mode navbar link colors */
-body:not(.dark-mode) .site-nav a {
-  color: #000;
-}
-
-/* Dark mode navbar link colors */
-body.dark-mode .site-nav a {
-  color: #f0f0f0;
-}
-
-/* Optional: hover effect for dark mode */
-body.dark-mode .site-nav a:hover {
-  color: #aad3ff;
-}
-
-
-/* === Dark mode base === */
-body.dark-mode {
-  background-color: #272822;
-  color: #f8f8f2;
-}
-
-.dark-mode a {
-  color: #66d9ef;
-}
-
-/* === Navigation in dark mode === */
-.dark-mode .site-header,
-.dark-mode nav {
-  background-color: #272822;
-  border-bottom: 1px solid #444;
-}
-
-.dark-mode .site-title,
-.dark-mode .site-nav a {
-  color: #f8f8f2;
-}
-
-/* === Toggle switch container === */
-.toggle-switch {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-}
-
-/* === Toggle switch style === */
-.toggle-switch input[type="checkbox"] {
-  display: none;
-}
-
-.toggle-slider {
-  width: 50px;
-  height: 26px;
-  background-color: #ccc;
-  border-radius: 50px;
-  position: relative;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-
-.toggle-slider::before {
-  content: "";
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background-color: white;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: transform 0.3s ease;
-}
-
-/* === When checked (dark mode) === */
-input[type="checkbox"]:checked + .toggle-slider {
-  background-color: #66d9ef;
-}
-
-input[type="checkbox"]:checked + .toggle-slider::before {
-  transform: translateX(24px);
-}
-
-
+/* === Light/Dark Mode === */
 :root {
-  --background-dark: #272822;  /* Monokai base */
-  --text-dark: #f8f8f2;        /* Monokai text */
-  --accent-dark: #66d9ef;      /* Monokai blue for highlights */
-}
-
-html.dark {
-  background-color: var(--dark-bg);
-  color: var(--dark-text);
+  --background-dark: #272822;
+  --text-dark: #f8f8f2;
+  --accent-dark: #66d9ef;
+  --light-bg: #ffffff;
+  --light-text: #000000;
+  --dark-bg: #272822;
+  --dark-text: #f8f8f2;
 }
 
 body {
@@ -236,7 +88,38 @@ html.dark body {
   background-color: var(--dark-bg);
   color: var(--dark-text);
 }
-/* Dark Mode Toggle - Tailwind-inspired */
+
+.dark-mode a {
+  color: var(--accent-dark);
+}
+
+/* Navigation Links */
+nav a,
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .site-nav a,
+body.dark-mode nav a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .site-nav a:hover,
+body.dark-mode nav a:hover {
+  color: #aad3ff;
+}
+
+/* Header in Dark Mode */
+.dark-mode .site-header,
+.dark-mode nav {
+  background-color: var(--dark-bg);
+  border-bottom: 1px solid #444;
+}
+
+/* === Dark Mode Toggle - Tailwind-inspired === */
 .dark-toggle {
   display: inline-block;
   position: relative;
@@ -257,7 +140,7 @@ html.dark body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #d1d5db; /* Tailwind's gray-300 */
+  background-color: #d1d5db;
   transition: background-color 0.3s ease;
   border-radius: 9999px;
 }
@@ -276,7 +159,7 @@ html.dark body {
 }
 
 .dark-toggle input:checked + .slider {
-  background-color: #4b5563; /* Tailwind's gray-600 */
+  background-color: #4b5563;
 }
 
 .dark-toggle input:checked + .slider::before {
