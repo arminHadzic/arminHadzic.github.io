@@ -1,7 +1,7 @@
 # Site configuration Options
 title: Armin Hadzic
 author: Armin Hadzic
-description: © 2025 Armin Hadzic. All rights reserved.
+#description: © 2025 Armin Hadzic. All rights reserved.
 url: http://www.arminhadzic.com
 
 minima:
