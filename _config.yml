@@ -4,6 +4,9 @@ author: Armin Hadzic
 #description: © 2025 Armin Hadzic. All rights reserved.
 url: http://www.arminhadzic.com
 
+include:
+  - _includes/custom-head.html
+
 minima:
   social_links:
     - title: "GitHub"
@@ -30,4 +33,4 @@ header_pages:
 
 # Build Settings
 #markdown: kramdown
-#theme: minima
+theme: minima
