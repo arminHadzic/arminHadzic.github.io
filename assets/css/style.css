@@ -37,3 +37,15 @@
 .social-media-grid .social-label {
   font-size: 0.85rem;
 }
+
+ul.social-media-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
+  gap: 1.5rem !important;
+  list-style: none;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 600px;
+  justify-items: center !important;
+  border: 2px dashed red; /* debug: visible border */
+}
