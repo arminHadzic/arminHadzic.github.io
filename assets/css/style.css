@@ -216,10 +216,9 @@ input[type="checkbox"]:checked + .toggle-slider::before {
 
 
 :root {
-  --light-bg: #ffffff;
-  --light-text: #1a202c; /* Tailwind's gray-900 */
-  --dark-bg: #1f2937;    /* Tailwind's gray-800 */
-  --dark-text: #f9fafb;  /* Tailwind's gray-50 */
+  --background-dark: #272822;  /* Monokai base */
+  --text-dark: #f8f8f2;        /* Monokai text */
+  --accent-dark: #66d9ef;      /* Monokai blue for highlights */
 }
 
 html.dark {
@@ -236,4 +235,50 @@ body {
 html.dark body {
   background-color: var(--dark-bg);
   color: var(--dark-text);
+}
+/* Dark Mode Toggle - Tailwind-inspired */
+.dark-toggle {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 24px;
+}
+
+.dark-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+  transition: background-color 0.3s ease;
+  border-radius: 9999px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.dark-toggle input:checked + .slider {
+  background-color: #4b5563; /* Tailwind's gray-600 */
+}
+
+.dark-toggle input:checked + .slider::before {
+  transform: translateX(20px);
 }
