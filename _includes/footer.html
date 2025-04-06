@@ -11,13 +11,6 @@
     &copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.
   </div>
 
-  <div class="toggle-switch">
-    <label>
-      <input type="checkbox" id="dark-mode-toggle">
-      <span class="toggle-slider"></span>
-    </label>
-  </div>
-
   <script>
     const toggle = document.getElementById("dark-mode-toggle");
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
