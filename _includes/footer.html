@@ -11,22 +11,4 @@
     &copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.
   </div>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("darkModeToggle");
-      const isDark = localStorage.getItem("theme") === "dark";
-
-      if (isDark) {
-        document.documentElement.classList.add("dark");
-        toggle.checked = true;
-      }
-
-      toggle.addEventListener("change", function () {
-        document.documentElement.classList.toggle("dark");
-        localStorage.setItem("theme", toggle.checked ? "dark" : "light");
-      });
-    });
-  </script>
-
-
 </footer>

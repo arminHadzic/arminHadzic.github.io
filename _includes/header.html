@@ -4,13 +4,28 @@
       {{ site.title | escape }}
     </a>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.getElementById("darkModeToggle");
+      const isDark = localStorage.getItem("theme") === "dark";
+
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", function () {
+        document.documentElement.classList.toggle("dark");
+        localStorage.setItem("theme", toggle.checked ? "dark" : "light");
+      });
+    });
+  </script>
+
     <nav class="site-nav">
       <div class="nav-links">
         {% include nav-items.html paths = site.minima.nav_pages %}
       </div>
-      <div class="dark-toggle">
-        {% include dark-mode-toggle.html %}
-      </div>
+      {% include dark-mode-toggle.html %}
     </nav>
   </div>
 </header>
