@@ -134,3 +134,19 @@ body.dark-mode nav a {
 body.dark-mode nav a:hover {
   color: #aad3ff;
 }
+
+
+/* Light mode navbar link colors */
+body:not(.dark-mode) .site-nav a {
+  color: #000;
+}
+
+/* Dark mode navbar link colors */
+body.dark-mode .site-nav a {
+  color: #f0f0f0;
+}
+
+/* Optional: hover effect for dark mode */
+body.dark-mode .site-nav a:hover {
+  color: #aad3ff;
+}
