@@ -1,54 +1,51 @@
-/* General footer layout */
+/* Footer container */
 .footer-col-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem;
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* Footer columns */
+/* Footer text sections */
 .footer-col {
   flex: 1;
   min-width: 150px;
+  font-size: 0.85rem;
+  color: #666;
   padding: 0.5rem;
 }
 
-/* Author name (left), copyright (right) */
-.footer-col-1, .footer-col-3 {
-  font-size: 0.85rem;
-  color: #666;
-}
-
-/* Social icon grid (center) */
+/* Center section (social icons) */
 .footer-col-2 {
   display: flex;
   justify-content: center;
 }
 
-/* Grid layout for social icons */
+/* Horizontal layout for icons */
 .social-media-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
 
-/* Individual icon + label */
+/* Each icon+label pair */
 .social-media-grid li {
   text-align: center;
-}
-
-.social-media-grid a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Anchor styling */
+.social-media-grid a {
   text-decoration: none;
   color: #004080;
   transition: color 0.3s ease;
@@ -65,7 +62,7 @@
   margin-bottom: 0.4em;
 }
 
-/* Google Scholar image sizing */
+/* Scholar image icon sizing */
 .social-icon[src$=".svg"],
 .social-icon[src$=".png"],
 .social-icon[src$=".jpg"] {
@@ -79,8 +76,3 @@
 .social-label {
   font-size: 0.85rem;
 }
-
-/* Debug border (optional) */
-/* .social-media-grid {
-  border: 2px dashed red;
-} */
