@@ -11,25 +11,31 @@
     &copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.
   </div>
 
-  <script>
-    const toggle = document.getElementById('dark-mode-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  <div class="toggle-switch">
+    <label>
+      <input type="checkbox" id="dark-mode-toggle">
+      <span class="toggle-slider"></span>
+    </label>
+  </div>
 
-    function applyTheme(theme) {
-      if (theme === 'dark') {
-        document.body.classList.add('dark-mode');
-      } else {
-        document.body.classList.remove('dark-mode');
-      }
+  <script>
+    const toggle = document.getElementById("dark-mode-toggle");
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentMode = localStorage.getItem("theme");
+
+    if (currentMode === "dark" || (!currentMode && prefersDark)) {
+      document.body.classList.add("dark-mode");
+      toggle.checked = true;
     }
 
-    // Initial load from localStorage or system preference
-    const savedTheme = localStorage.getItem('theme');
-    applyTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
-
-    toggle.addEventListener('click', () => {
-      const isDark = document.body.classList.toggle('dark-mode');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+      }
     });
   </script>
 

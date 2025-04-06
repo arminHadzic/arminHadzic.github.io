@@ -84,14 +84,8 @@ body {
   color: #000;
 }
 
-/* Dark mode styles */
-body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
 /* Button styles */
-#dark-mode-toggle {
+/*#dark-mode-toggle {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -104,13 +98,13 @@ body.dark-mode {
   z-index: 1000;
   background-color: #f9f9f9;
   color: #333;
-}
+}*/
 
-body.dark-mode #dark-mode-toggle {
+/*body.dark-mode #dark-mode-toggle {
   background-color: #1e1e1e;
   color: #eee;
   border-color: #666;
-}
+}*/
 
 
 /* Navigation bar links */
@@ -149,4 +143,73 @@ body.dark-mode .site-nav a {
 /* Optional: hover effect for dark mode */
 body.dark-mode .site-nav a:hover {
   color: #aad3ff;
+}
+
+
+/* === Dark mode base === */
+body.dark-mode {
+  background-color: #272822;
+  color: #f8f8f2;
+}
+
+.dark-mode a {
+  color: #66d9ef;
+}
+
+/* === Navigation in dark mode === */
+.dark-mode .site-header,
+.dark-mode nav {
+  background-color: #272822;
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode .site-title,
+.dark-mode .site-nav a {
+  color: #f8f8f2;
+}
+
+/* === Toggle switch container === */
+.toggle-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+/* === Toggle switch style === */
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-slider {
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.toggle-slider::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+
+/* === When checked (dark mode) === */
+input[type="checkbox"]:checked + .toggle-slider {
+  background-color: #66d9ef;
+}
+
+input[type="checkbox"]:checked + .toggle-slider::before {
+  transform: translateX(24px);
 }
