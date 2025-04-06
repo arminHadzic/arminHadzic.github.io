@@ -4,19 +4,20 @@ author: Armin Hadzic
 description: © 2025 Armin Hadzic. All rights reserved.
 url: http://www.arminhadzic.com
 
-social_links:
-  - title: "GitHub"
-    url: "https://github.com/arminHadzic"
-    icon: "github"
-  - title: "Linkedin"
-    url: "https://www.linkedin.com/in/armin-hadzic/"
-    icon: "linkedin"
-  - title: "YouTube"
-    url: "https://www.youtube.com/@arminhadzic2278"
-    icon: "youtube"
-  - title: "Google Scholar"
-    url: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
-    icon: "google-scholar"
+minima:
+  social_links:
+    - title: "GitHub"
+      url: "https://github.com/arminHadzic"
+      icon: "github"
+    - title: "Linkedin"
+      url: "https://www.linkedin.com/in/armin-hadzic/"
+      icon: "linkedin"
+    - title: "YouTube"
+      url: "https://www.youtube.com/@arminhadzic2278"
+      icon: "youtube"
+    - title: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
+      icon: "google-scholar"
 
 
 header_pages:

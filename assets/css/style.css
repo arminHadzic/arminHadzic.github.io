@@ -1,9 +1,9 @@
 .social-media-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
   padding: 0;
-  margin: 2rem auto 0;
+  margin: 2rem auto;
   list-style: none;
   max-width: 600px;
   justify-items: center;
@@ -26,11 +26,14 @@
 }
 
 .social-icon {
-  font-size: 1.8em;
-  height: 1.8em;
+  font-size: 1.5em;
+  height: 1.5em;
+  width: auto;
   margin-bottom: 0.3em;
 }
 
-.social-label {
-  font-size: 0.9em;
+.social-media-list img.social-icon {
+  height: 1.5em;
+  width: auto;
+  display: block;
 }
