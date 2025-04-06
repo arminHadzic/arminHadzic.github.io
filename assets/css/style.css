@@ -179,6 +179,14 @@ html.dark .site-nav a:hover {
   height: 0;
 }
 
+/* Fix for label styling */
+.dark-toggle label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
 .slider {
   position: absolute;
   cursor: pointer;
