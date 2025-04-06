@@ -2,10 +2,10 @@
   {%- for entry in site.minima.social_links -%}
     <li>
       <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
-        {%- if entry.type == "svg" -%}
-          <img src="{{ entry.icon | relative_url }}" alt="{{ entry.title }}" class="social-icon custom-svg-icon" />
+        {%- if entry.icon == "google-scholar" -%}
+          <span class="ai ai-google-scholar social-icon"></span>
         {%- else -%}
-          <i class="fa-brands fa-{{ entry.icon }} social-icon"></i>
+          <span class="fa-brands fa-{{ entry.icon }} social-icon"></span>
         {%- endif -%}
         <span class="social-label">{{ entry.title }}</span>
       </a>

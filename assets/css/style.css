@@ -48,17 +48,17 @@
   transition: color 0.3s;
 }
 
-.social-media-grid a:hover .social-icon {
+/*.social-media-grid a:hover .social-icon {
   color: var(--brand-color, #1a73e8);
   filter: brightness(1.2);
-}
+}*/
 
 /* === Icons === */
-.social-icon {
+/*.social-icon {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
   transition: transform 0.2s;
-}
+}*/
 
 .social-icon:hover {
   transform: scale(1.1);
@@ -76,3 +76,17 @@
   font-size: 0.8rem;
   margin-top: 0.2rem;
 }
+
+.social-icon {
+  font-size: 2rem;
+  color: var(--text-color, #444);
+  display: block;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+}
+
+.social-media-grid a:hover .social-icon {
+  color: var(--brand-color, #0056b3);
+  filter: brightness(1.2);
+}
+
