@@ -31,13 +31,34 @@
 }
 
 .social-icon {
-  font-size: 2.2rem;
-  height: auto;
-  width: auto;
+  width: 2.2rem;
+  height: 2.2rem;
+  aspect-ratio: 1 / 1;
+  display: block;
   margin-bottom: 0.4em;
+  object-fit: contain;
 }
 
 img.social-icon {
   width: 2.2rem;
-  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 0.4em auto;
 }
+
+.footer-col-2 {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.footer-col-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
