@@ -17,7 +17,7 @@ minima:
       icon: "youtube"
     - title: "Google Scholar"
       url: "https://scholar.google.com/citations?user=DlDme3IAAAAJ&hl=en&oi=sra"
-      icon: "google-scholar"
+      icon: "ai-google-scholar"
 
 
 header_pages:

@@ -2,8 +2,8 @@
   {%- for entry in site.minima.social_links -%}
     <li>
       <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
-        {%- if entry.icon == "google-scholar" -%}
-          <span class="ai ai-google-scholar social-icon"></span>
+        {%- if entry.icon contains "ai-" -%}
+          <span class="ai {{ entry.icon }} social-icon"></span>
         {%- else -%}
           <span class="fa-brands fa-{{ entry.icon }} social-icon"></span>
         {%- endif -%}
