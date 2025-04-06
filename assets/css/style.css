@@ -122,9 +122,29 @@ html.dark .site-nav a:hover {
   gap: 1rem;
 }
 
-.dark-toggle {
-  margin-left: auto;
+/* Flex layout for nav: links on left, toggle on right */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Optional: align toggle vertically with nav items */
+.dark-toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+}
+
 
 .dark-toggle input {
   opacity: 0;
@@ -163,4 +183,22 @@ html.dark .site-nav a:hover {
 
 .dark-toggle input:checked + .slider::before {
   transform: translateX(20px);
+}
+
+
+@media (max-width: 768px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .dark-toggle {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
 }
