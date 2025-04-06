@@ -1,13 +1,38 @@
-/* === Social Icon Grid === */
-.social-media-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+/* === Footer Layout === */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
   gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.footer-center {
+  flex: 2;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+}
+
+/* === Social Media Grid === */
+.social-media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1.2rem;
   list-style: none;
+  padding: 0;
   margin: 0;
+  max-width: 400px;
+  width: 100%;
 }
 
 .social-media-grid li {
@@ -18,8 +43,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
   transition: color 0.3s;
 }
 
@@ -28,7 +53,7 @@
   filter: brightness(1.2);
 }
 
-/* === Icon Sizing === */
+/* === Icons === */
 .social-icon {
   font-size: 1.8rem;
   margin-bottom: 0.4rem;
@@ -36,44 +61,18 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
-/* For custom SVGs like Google Scholar */
+/* For SVG icons */
 .custom-svg-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   margin-bottom: 0.4rem;
 }
 
-/* === Label Text === */
+/* === Labels === */
 .social-label {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin-top: 0.2rem;
-}
-
-/* === Footer Layout === */
-.site-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-}
-
-@media (min-width: 768px) {
-  .site-footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .footer-left, .footer-right {
-    flex: 1;
-  }
-
-  .footer-center {
-    flex: 2;
-    display: flex;
-    justify-content: center;
-  }
 }
