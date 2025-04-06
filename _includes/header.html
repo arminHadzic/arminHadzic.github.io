@@ -17,9 +17,11 @@
   <!-- Dark Mode Script -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      console.log("Dark mode script loaded!");
+
       const toggle = document.getElementById("darkModeToggle");
       if (!toggle) {
-        console.error("Dark mode toggle not found");
+        console.error("Dark mode toggle NOT found");
         return;
       }
 
