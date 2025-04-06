@@ -85,7 +85,7 @@ body {
 }
 
 /* Button styles */
-/*#dark-mode-toggle {
+#dark-mode-toggle {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
@@ -98,13 +98,13 @@ body {
   z-index: 1000;
   background-color: #f9f9f9;
   color: #333;
-}*/
+}
 
-/*body.dark-mode #dark-mode-toggle {
+body.dark-mode #dark-mode-toggle {
   background-color: #1e1e1e;
   color: #eee;
   border-color: #666;
-}*/
+}
 
 
 /* Navigation bar links */
