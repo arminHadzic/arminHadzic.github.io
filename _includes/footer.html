@@ -10,4 +10,27 @@
   <div class="footer-right">
     &copy; {{ site.time | date: '%Y' }} {{ site.author }}. All rights reserved.
   </div>
+
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    }
+
+    // Initial load from localStorage or system preference
+    const savedTheme = localStorage.getItem('theme');
+    applyTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
+
+    toggle.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+
 </footer>

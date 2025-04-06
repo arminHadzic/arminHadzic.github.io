@@ -48,18 +48,6 @@
   transition: color 0.3s;
 }
 
-/*.social-media-grid a:hover .social-icon {
-  color: var(--brand-color, #1a73e8);
-  filter: brightness(1.2);
-}*/
-
-/* === Icons === */
-/*.social-icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.4rem;
-  transition: transform 0.2s;
-}*/
-
 .social-icon:hover {
   transform: scale(1.1);
 }
@@ -90,3 +78,36 @@
   filter: brightness(1.2);
 }
 
+/* Default light theme */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Button styles */
+#dark-mode-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: none;
+  border: 2px solid #ccc;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1000;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #1e1e1e;
+  color: #eee;
+  border-color: #666;
+}
