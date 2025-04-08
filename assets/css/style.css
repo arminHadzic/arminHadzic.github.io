@@ -237,3 +237,19 @@ html.dark .site-nav a:hover {
     margin-top: 0.5rem;
   }
 }
+
+@media (max-width: 600px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #dark-mode-toggle-container {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+  }
+}
