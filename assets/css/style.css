@@ -67,7 +67,69 @@
   margin-top: 0.2rem;
 }
 
-/* === Light/Dark Mode Variables === */
+/* === Light/Dark Mode === */
+:root {
+  --background-dark: #1f2937;       /* Tailwind gray-800 */
+  --text-dark: #f9fafb;             /* Tailwind gray-100 */
+  --accent-dark: #60a5fa;           /* Tailwind blue-400 */
+  --light-bg: #ffffff;
+  --light-text: #000000;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Navigation Links */
+nav a,
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* === Header & Nav Bar === */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a,
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0.75rem;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-right: auto;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === Dark Mode Styling === */
 :root {
   --background-dark: #1f2937; /* Tailwind gray-800 */
   --text-dark: #f9fafb;       /* Tailwind gray-100 */
@@ -76,7 +138,6 @@
   --light-text: #000000;
 }
 
-/* === Base Colors === */
 body {
   background-color: var(--light-bg);
   color: var(--light-text);
@@ -104,40 +165,6 @@ html.dark .site-nav a:hover {
   color: var(--accent-dark);
 }
 
-/* === Navigation Styles === */
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0.5rem 0;
-  gap: 1rem;
-}
-
-.nav-links {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-nav a,
-.site-nav a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  padding: 0.5rem 0.75rem;
-}
-
-/* === Header === */
-.site-title {
-  font-weight: bold;
-  font-size: 1.4rem;
-  margin-right: auto;
-  color: inherit;
-  text-decoration: none;
-}
-
 /* === Dark Mode Toggle === */
 .dark-toggle {
   position: relative;
@@ -152,6 +179,7 @@ nav a,
   height: 0;
 }
 
+/* Fix for label styling */
 .dark-toggle label {
   display: inline-block;
   width: 100%;
@@ -161,4 +189,103 @@ nav a,
 
 .slider {
   position: absolute;
-  cursor
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d1d5db;
+  transition: background-color 0.3s ease;
+  border-radius: 9999px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dark-toggle input:checked + .slider {
+  background-color: #4b5563;
+}
+
+.dark-toggle input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* Fix responsive nav layout */
+.responsive-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Ensure nav items flow nicely */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Align the toggle nicely */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* === Hamburger Menu === */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: auto;
+}
+
+/* Mobile behavior */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  #dark-mode-toggle-container {
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
