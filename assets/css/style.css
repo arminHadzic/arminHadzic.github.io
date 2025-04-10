@@ -220,36 +220,38 @@ html.dark .site-nav a:hover {
   transform: translateX(20px);
 }
 
-/* === Responsive Nav Stack === */
-@media (max-width: 768px) {
-  .site-nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    width: 100%;
-    justify-content: flex-start;
-  }
-
-  .dark-toggle {
-    align-self: flex-end;
-    margin-top: 0.5rem;
-  }
+/* Fix responsive nav layout */
+.responsive-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
+/* Ensure nav items flow nicely */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Align the toggle nicely */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Mobile tweak: stack vertically on small screens */
 @media (max-width: 600px) {
-  .site-nav {
+  .responsive-nav {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  #dark-mode-toggle-container {
+  .toggle-container {
     margin-left: 0;
     margin-top: 0.5rem;
-  }
-
-  .nav-links {
-    justify-content: flex-start;
   }
 }

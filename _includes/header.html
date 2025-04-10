@@ -4,13 +4,13 @@
       {{ site.title | escape }}
     </a>
 
-    <nav class="site-nav" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;">
-      <div class="nav-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+    <nav class="site-nav responsive-nav">
+      <div class="nav-links">
         {% include nav-items.html paths=site.header_pages %}
       </div>
 
       <!-- Dark Mode Toggle Button -->
-      <div id="dark-mode-toggle-container" style="margin-left: auto; padding-left: 1rem;">
+      <div id="dark-mode-toggle-container">
         {% include dark-mode-toggle.html %}
       </div>
     </nav>
