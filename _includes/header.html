@@ -4,7 +4,12 @@
       {{ site.title | escape }}
     </a>
 
-    <nav class="site-nav responsive-nav">
+    <!-- Hamburger Icon -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+
+    <nav class="site-nav responsive-nav" id="siteNav">
       <div class="nav-links">
         {% include nav-items.html paths=site.header_pages %}
       </div>
@@ -16,28 +21,31 @@
     </nav>
   </div>
 
-  <!-- Dark Mode Script -->
+  <!-- Scripts -->
   <script>
+    // Dark mode toggle logic
     document.addEventListener("DOMContentLoaded", function () {
-      console.log("Dark mode script loaded!");
-
       const toggle = document.getElementById("darkModeToggle");
-      if (!toggle) {
-        console.error("Dark mode toggle NOT found");
-        return;
+      if (toggle) {
+        const isDark = localStorage.getItem("theme") === "dark";
+        if (isDark) {
+          document.documentElement.classList.add("dark");
+          toggle.checked = true;
+        }
+
+        toggle.addEventListener("change", function () {
+          const isDark = toggle.checked;
+          document.documentElement.classList.toggle("dark", isDark);
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
       }
 
-      const isDark = localStorage.getItem("theme") === "dark";
+      // Hamburger toggle logic
+      const menuToggle = document.getElementById("menuToggle");
+      const nav = document.getElementById("siteNav");
 
-      if (isDark) {
-        document.documentElement.classList.add("dark");
-        toggle.checked = true;
-      }
-
-      toggle.addEventListener("change", function () {
-        const isDark = toggle.checked;
-        document.documentElement.classList.toggle("dark", isDark);
-        localStorage.setItem("theme", isDark ? "dark" : "light");
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("open");
       });
     });
   </script>
