@@ -4,12 +4,7 @@
       {{ site.title | escape }}
     </a>
 
-    <!-- Hamburger Icon -->
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-      &#9776;
-    </button>
-
-    <nav class="site-nav responsive-nav" id="siteNav">
+    <nav class="site-nav responsive-nav">
       <div class="nav-links">
         {% include nav-items.html paths=site.header_pages %}
       </div>
@@ -21,31 +16,28 @@
     </nav>
   </div>
 
-  <!-- Scripts -->
+  <!-- Dark Mode Script -->
   <script>
-    // Dark mode toggle logic
     document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.getElementById("darkModeToggle");
-      if (toggle) {
-        const isDark = localStorage.getItem("theme") === "dark";
-        if (isDark) {
-          document.documentElement.classList.add("dark");
-          toggle.checked = true;
-        }
+      console.log("Dark mode script loaded!");
 
-        toggle.addEventListener("change", function () {
-          const isDark = toggle.checked;
-          document.documentElement.classList.toggle("dark", isDark);
-          localStorage.setItem("theme", isDark ? "dark" : "light");
-        });
+      const toggle = document.getElementById("darkModeToggle");
+      if (!toggle) {
+        console.error("Dark mode toggle NOT found");
+        return;
       }
 
-      // Hamburger toggle logic
-      const menuToggle = document.getElementById("menuToggle");
-      const nav = document.getElementById("siteNav");
+      const isDark = localStorage.getItem("theme") === "dark";
 
-      menuToggle.addEventListener("click", function () {
-        nav.classList.toggle("open");
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+        toggle.checked = true;
+      }
+
+      toggle.addEventListener("change", function () {
+        const isDark = toggle.checked;
+        document.documentElement.classList.toggle("dark", isDark);
+        localStorage.setItem("theme", isDark ? "dark" : "light");
       });
     });
   </script>
