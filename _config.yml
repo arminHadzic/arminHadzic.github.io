@@ -27,9 +27,10 @@ header_pages:
   - index.md
   - research.md
   - publications.md
-  # - CV.md
+  - resume.md
   # - publications/DCA.md
   # - publications/RasterNet.md
+  # - archive.md
 
 # Build Settings
 #markdown: kramdown

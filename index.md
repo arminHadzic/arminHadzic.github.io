@@ -14,13 +14,15 @@ Welcome to my website. My name is Armin Hadzic and I am a research scientist. Cu
 Developing unsupervised learning methods to address challenges in open vocabulary segmentation and latent information representation, especially across multiple modalities (e.g., imagery, text, and point clouds). More generally, I am interested in **deep learning**, **computer vision**, **reinforcement learning**, **NLP**, **robotics**, and **artificial intelligence**.
 
 # Resume and CV
-Check out my [Resume and CV](http://www.arminhadzic.com/CV.html).
+Check out my [Resume and CV](http://www.arminhadzic.com/resume.html).
 
 # Contact:
 arminhadzic AT outlook DOT com
 
 # Updates
 
-{% for post in site.posts %}
-  [{{ post.title }}]({{ post.url }}) {{ post.date | date_to_string }}
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }}) <small>{{ post.date | date_to_string }}</small>
 {% endfor %}
+
+<p><a href="{{ '/archive/' | relative_url }}">See all posts.</a></p>
