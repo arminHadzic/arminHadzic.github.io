@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Resume and Curriculum Vitae
+title: Resume/CV
 permalink: /resume.html
+nav_order: 4
+exclude: false
 ---
 
 # Resume

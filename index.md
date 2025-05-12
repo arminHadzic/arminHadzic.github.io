@@ -25,4 +25,4 @@ arminhadzic AT outlook DOT com
 - [{{ post.title }}]({{ post.url }}) <small>{{ post.date | date_to_string }}</small>
 {% endfor %}
 
-<p><a href="{{ '/archive/' | relative_url }}">See all posts.</a></p>
+<p><a href="{{ '/archive.html' | relative_url }}">See all posts.</a></p>
