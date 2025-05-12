@@ -2,7 +2,7 @@
 layout: page
 title: Resume/CV
 permalink: /resume.html
-nav_order: 4
+nav_order: 3
 exclude: false
 ---
 
