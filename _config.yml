@@ -24,7 +24,7 @@ minima:
 
 
 header_pages:
-  - index.md
+  # - index.md
   - research.md
   - publications.md
   - resume.md

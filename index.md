@@ -2,8 +2,6 @@
 title: Home
 layout: default
 menu: main
-nav_order: 1
-exclude: false
 ---
 
 {% include figure.html file="armin_hadzic_picture.jpg" alt="my picture" %}

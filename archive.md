@@ -1,10 +1,8 @@
 ---
 layout: page
-title: All Posts
+title: Post Archive
 permalink: /archive.html
 ---
-
-# Post Archive
 
 {% for post in site.posts %}
 - [{{ post.title }}]({{ post.url }}) <small>{{ post.date | date_to_string }}</small>
