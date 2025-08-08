@@ -8,7 +8,7 @@ show_in_nav: false
 
 ## Estimation Displaced Populations from Overhead
 
-Armin Hadzic, Gordon Christie, Jeffrey Freeman, Amber Dismer, Stevan Bullard, Ashley Greiner, Nathan Jacobs, and Ryan Mukherjee. IGARSS 2020 [[PDF]](https://arxiv.org/abs/2006.14547)
+Armin Hadzic, Gordon Christie, Jeffrey Freeman, Amber Dismer, Stevan Bullard, Ashley Greiner, Nathan Jacobs, and Ryan Mukherjee. IGARSS 2020 [[PDF]](https://arxiv.org/abs/2006.14547) [[Code]](https://github.com/JHUAPL/EstimatingDisplacedPopulations) [[Dataset]](https://github.com/JHUAPL/EstimatingDisplacedPopulations/tree/master/dataset)
 
 {% include figure.html file="IGARSS_DCA_approach_diagram.png" alt="DCA_approach_pic" %}
 
