@@ -34,7 +34,7 @@ A model sheet is a reference document used in animation studios to ensure visual
 This generation tool uses a local Python backend to securely ping Google's generative models and orchestrate the components. To run the app:
 
 1. **Clone the code:** View and pull the source from the [GitHub Repository](https://github.com/arminHadzic/charactersheet).
-2. **Start the local server:** Inside the `charactersheet` directory, run:
+2. **Start the local server:** Inside the charactersheet directory, run:
    ```bash
    mamba env create -f environment.yml
    mamba activate charactersheet
