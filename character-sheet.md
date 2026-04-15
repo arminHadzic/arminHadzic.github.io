@@ -29,10 +29,24 @@ An AI-powered tool that creates professional animation model sheets from a singl
 
 A model sheet is a reference document used in animation studios to ensure visual consistency across scenes and animators. It includes multiple drawings of a character showing their proportions, expressions, poses, and color palette from multiple angles.
 
+### Local Setup & Usage instructions
+
+This generation tool uses a local Python backend to securely ping Google's generative models and orchestrate the components. To run the app:
+
+1. **Clone the code:** View and pull the source from the [GitHub Repository](https://github.com/arminHadzic/charactersheet).
+2. **Start the local server:** Inside the `charactersheet` directory, run:
+   ```bash
+   mamba env create -f environment.yml
+   mamba activate charactersheet
+   ./run.sh
+   ```
+3. Enter your Gemini API key (stored safely locally) and an image URL on the page interface, then hit Generate!
+
 ### Tech stack
 
 - **Agent intelligence** — [Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/) with function calling drives the multi-step workflow
-- **Image generation** — [Imagen 3](https://deepmind.google/technologies/imagen-3/) generates each component drawing
+- **Image generation** — Gemini 3.1 Flash Image Preview generates each component drawing mapping strict anatomical rules
+- **Backend Orchestration** — [FastAPI + LangGraph](https://langchain-ai.github.io/langgraph/) manages the concurrent visual pipeline locally
 - **Composition** — HTML5 Canvas assembles the final sheet client-side
 - **Interface** — React + TypeScript, deployed as a static app
 
